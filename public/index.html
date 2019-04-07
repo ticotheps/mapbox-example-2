@@ -281,6 +281,23 @@
         .setLngLat(jamieLocation)
         .setPopup(jamiePopup) // sets a popup on the jamieMarker
         .addTo(map);
+
+
+      // Sets the location for the ryanMarker
+      var ryanLocation = [-104.82453597160291, 38.830568158013136];
+      // Creates a popup for Ryan
+      var ryanPopup = new mapboxgl.Popup({ offset: 25 })
+      .setText(
+        "NAME: Ryan Clark, SWAGGER: Old-Bird-Swag, COHORT: Web17"
+      );
+      // Creates a DOM element for the Ryan's marker called 'ryanDiv'
+      var ryanDiv = document.createElement('div');
+      ryanDiv.id = 'ryanMarker';
+      // Creates the ryanMarker
+      new mapboxgl.Marker(ryanDiv)
+        .setLngLat(ryanLocation)
+        .setPopup(ryanPopup) // sets a popup on the ryanMarker
+        .addTo(map);
     </script>
   </body>
 </html>
