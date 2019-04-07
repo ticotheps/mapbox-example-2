@@ -158,6 +158,7 @@
       map.addControl(new mapboxgl.NavigationControl());
 
 
+
       // Sets the location for the ticoMarker
       var ticoLocation = [-83.27037168817577, 43.83297706627127];
  
@@ -175,6 +176,26 @@
       new mapboxgl.Marker(ticoDiv)
         .setLngLat(ticoLocation)
         .setPopup(ticoPopup) // sets a popup on the ticoMarker
+        .addTo(map);
+
+
+      // Sets the location for the brandonMarker
+      var brandonLocation = [-95.34829968898951, 29.75139922863808];
+ 
+      // Creates a popup for Brandon
+      var brandonPopup = new mapboxgl.Popup({ offset: 25 })
+      .setText(
+        "NAME: Brandon Gardner, SWAGGER: Silent-but-Deadly, COHORT: Web17"
+      );
+      
+      // Creates a DOM element for the Brandon's marker called 'brandonDiv'
+      var brandonDiv = document.createElement('div');
+      brandonDiv.id = 'brandonMarker';
+      
+      // Creates the brandonMarker
+      new mapboxgl.Marker(brandonDiv)
+        .setLngLat(brandonLocation)
+        .setPopup(brandonPopup) // sets a popup on the brandonMarker
         .addTo(map);
     </script>
   </body>
