@@ -57,7 +57,15 @@
         border-radius: 50%;
         cursor: pointer;
       }
- 
+    
+      #brandonMarker {
+        background-image: url('https://avatars3.githubusercontent.com/u/43099379?s=400&v=4');
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+      } 
       .mapboxgl-popup {
         max-width: 200px;
       }
@@ -149,17 +157,10 @@
       // Adds a map zoom/rotation controller
       map.addControl(new mapboxgl.NavigationControl());
 
-      // Adds monument marker and popup
+
+      // Sets the location for the ticoMarker
       var ticoLocation = [-83.27037168817577, 43.83297706627127];
-      // var map = new mapboxgl.Map({
-      //   container: 'map',
-      //   style: 'mapbox://styles/mapbox/light-v10',
-      //   center: monument,
-      //   zoom: 15
-      // });
  
-
-
       // Creates a popup for Tico
       var ticoPopup = new mapboxgl.Popup({ offset: 25 })
       .setText(
