@@ -149,7 +149,7 @@
       map.addControl(new mapboxgl.NavigationControl());
 
       // Adds monument marker and popup
-      var monument = [-77.0353, 38.8895];
+      var ticoLocation = [-83.27037168817577, 43.83297706627127];
       // var map = new mapboxgl.Map({
       //   container: 'map',
       //   style: 'mapbox://styles/mapbox/light-v10',
@@ -160,7 +160,7 @@
       // create the popup
       var popup = new mapboxgl.Popup({ offset: 25 })
       .setText(
-        "Name: Tico Thepsourinthone, Cohort: Web17"
+        "Name: Tico S. Thepsourinthone, Cohort: Web17"
       );
       
       // create DOM element for the marker
@@ -169,7 +169,7 @@
       
       // create the marker
       new mapboxgl.Marker(el)
-        .setLngLat(monument)
+        .setLngLat(ticoLocation)
         .setPopup(popup) // sets a popup on this marker
         .addTo(map);
     </script>
