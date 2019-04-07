@@ -157,18 +157,18 @@
       //   zoom: 15
       // });
  
-      // create a popup for Tico
+      // Creates a popup for Tico
       var ticoPopup = new mapboxgl.Popup({ offset: 25 })
       .setText(
         "Name: Tico S. Thepsourinthone, Cohort: Web17"
       );
       
-      // create DOM element for the marker
-      var el = document.createElement('div');
-      el.id = 'marker';
+      // Creates a DOM element for the Tico's marker called 'ticoDiv'
+      var ticoDiv = document.createElement('div');
+      ticoDiv.id = 'marker';
       
       // create the marker
-      new mapboxgl.Marker(el)
+      new mapboxgl.Marker(ticoDiv)
         .setLngLat(ticoLocation)
         .setPopup(ticoPopup) // sets a popup on Tico's marker
         .addTo(map);
