@@ -50,7 +50,7 @@
         display: none;
       }
       #ticoMarker {
-        background-image: url('https://avatars0.githubusercontent.com/u/16110931?s=400&u=93afcc565342e354b55525b3d049617d781d6a6a&v=4');
+        background-image: url('https://media.licdn.com/dms/image/C4D03AQF7SiNESVIHKg/profile-displayphoto-shrink_200_200/0?e=1560384000&v=beta&t=xdSdqxSkUdNeN0GH_nTqyX0qPiKQn3CBVE1O8NAMU-k');
         background-size: cover;
         width: 50px;
         height: 50px;
@@ -58,7 +58,7 @@
         cursor: pointer;
       }
       #brandonMarker {
-        background-image: url('https://avatars3.githubusercontent.com/u/43099379?s=400&v=4');
+        background-image: url('https://media.licdn.com/dms/image/C5103AQGpOv60ucS0Rw/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=NpjawVfk9CWnFP3SgLaD4sjUyRMvjbhAebI_M8YZOFs');
         background-size: cover;
         width: 50px;
         height: 50px;
@@ -171,7 +171,7 @@
       // Creates a popup for Tico
       var ticoPopup = new mapboxgl.Popup({ offset: 25 })
       .setText(
-        "NAME: Tico S. Thepsourinthone, SWAGGER LEVEL: He's On Fire, COHORT: Web17"
+        "NAME: Tico S. Thepsourinthone, SWAGGER: Airbender-Swag, COHORT: Web17"
       );
       // Creates a DOM element for the Tico's marker called 'ticoDiv'
       var ticoDiv = document.createElement('div');
@@ -188,7 +188,7 @@
       // Creates a popup for Brandon
       var brandonPopup = new mapboxgl.Popup({ offset: 25 })
       .setText(
-        "NAME: Brandon Gardner, SWAGGER: Silent-but-Deadly, COHORT: Web17"
+        "NAME: Brandon Gardner, SWAGGER: MongoDB-Swag, COHORT: Web17"
       );
       // Creates a DOM element for the Brandon's marker called 'brandonDiv'
       var brandonDiv = document.createElement('div');
@@ -197,6 +197,23 @@
       new mapboxgl.Marker(brandonDiv)
         .setLngLat(brandonLocation)
         .setPopup(brandonPopup) // sets a popup on the brandonMarker
+        .addTo(map);
+
+
+      // Sets the location for the julianMarker
+      var julianLocation = [-117.84959946287097, 33.78650678607805];
+      // Creates a popup for Julian
+      var julianPopup = new mapboxgl.Popup({ offset: 25 })
+      .setText(
+        "NAME: Julian Moreno, SWAGGER: WordPress-Swag, COHORT: Web17"
+      );
+      // Creates a DOM element for the Julian's marker called 'julianDiv'
+      var julianDiv = document.createElement('div');
+      julianDiv.id = 'julianMarker';
+      // Creates the julianMarker
+      new mapboxgl.Marker(julianDiv)
+        .setLngLat(julianLocation)
+        .setPopup(julianPopup) // sets a popup on the julianMarker
         .addTo(map);
     </script>
   </body>
