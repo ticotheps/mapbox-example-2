@@ -157,8 +157,8 @@
       //   zoom: 15
       // });
  
-      // create the popup
-      var popup = new mapboxgl.Popup({ offset: 25 })
+      // create a popup for Tico
+      var ticoPopup = new mapboxgl.Popup({ offset: 25 })
       .setText(
         "Name: Tico S. Thepsourinthone, Cohort: Web17"
       );
@@ -170,7 +170,7 @@
       // create the marker
       new mapboxgl.Marker(el)
         .setLngLat(ticoLocation)
-        .setPopup(popup) // sets a popup on this marker
+        .setPopup(ticoPopup) // sets a popup on Tico's marker
         .addTo(map);
     </script>
   </body>
