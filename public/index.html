@@ -49,7 +49,7 @@
         border-radius: 3px;
         display: none;
       }
-      #marker {
+      #ticoMarker {
         background-image: url('https://avatars0.githubusercontent.com/u/16110931?s=400&u=93afcc565342e354b55525b3d049617d781d6a6a&v=4');
         background-size: cover;
         width: 50px;
@@ -165,7 +165,7 @@
       
       // Creates a DOM element for the Tico's marker called 'ticoDiv'
       var ticoDiv = document.createElement('div');
-      ticoDiv.id = 'marker';
+      ticoDiv.id = 'ticoMarker';
       
       // create the marker
       new mapboxgl.Marker(ticoDiv)
