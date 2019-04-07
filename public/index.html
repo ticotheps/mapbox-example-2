@@ -161,17 +161,14 @@
 
       // Sets the location for the ticoMarker
       var ticoLocation = [-83.27037168817577, 43.83297706627127];
- 
       // Creates a popup for Tico
       var ticoPopup = new mapboxgl.Popup({ offset: 25 })
       .setText(
         "NAME: Tico S. Thepsourinthone, SWAGGER LEVEL: He's On Fire, COHORT: Web17"
       );
-      
       // Creates a DOM element for the Tico's marker called 'ticoDiv'
       var ticoDiv = document.createElement('div');
       ticoDiv.id = 'ticoMarker';
-      
       // Creates the ticoMarker
       new mapboxgl.Marker(ticoDiv)
         .setLngLat(ticoLocation)
@@ -181,17 +178,14 @@
 
       // Sets the location for the brandonMarker
       var brandonLocation = [-95.34829968898951, 29.75139922863808];
- 
       // Creates a popup for Brandon
       var brandonPopup = new mapboxgl.Popup({ offset: 25 })
       .setText(
         "NAME: Brandon Gardner, SWAGGER: Silent-but-Deadly, COHORT: Web17"
       );
-      
       // Creates a DOM element for the Brandon's marker called 'brandonDiv'
       var brandonDiv = document.createElement('div');
       brandonDiv.id = 'brandonMarker';
-      
       // Creates the brandonMarker
       new mapboxgl.Marker(brandonDiv)
         .setLngLat(brandonLocation)
