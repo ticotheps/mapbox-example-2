@@ -113,10 +113,11 @@
         inputs[i].onclick = switchLayer;
       }
 
-      // Creates a draggable marker that can give you current coordinates 
-      // of the marker
+      // Creates a display for the draggable marker that will give you 
+      // current coordinates of the marker
       var coordinates = document.getElementById("coordinates");
 
+      // Creates a draggable marker
       var marker = new mapboxgl.Marker({
         draggable: true
       })
@@ -158,7 +159,7 @@
       // });
  
 
-      
+
       // Creates a popup for Tico
       var ticoPopup = new mapboxgl.Popup({ offset: 25 })
       .setText(
