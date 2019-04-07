@@ -298,6 +298,23 @@
         .setLngLat(ryanLocation)
         .setPopup(ryanPopup) // sets a popup on the ryanMarker
         .addTo(map);
+
+
+      // Sets the location for the lowellMarker
+      var lowellLocation = [-111.63890154599396, 40.11547381025369];
+      // Creates a popup for Lowell
+      var lowellPopup = new mapboxgl.Popup({ offset: 25 })
+      .setText(
+        "NAME: Lowell Richardson, SWAGGER: Russian-Quiz-Swag, COHORT: Web17"
+      );
+      // Creates a DOM element for the Lowell's marker called 'lowellDiv'
+      var lowellDiv = document.createElement('div');
+      lowellDiv.id = 'lowellMarker';
+      // Creates the lowellMarker
+      new mapboxgl.Marker(lowellDiv)
+        .setLngLat(lowellLocation)
+        .setPopup(lowellPopup) // sets a popup on the lowellMarker
+        .addTo(map);
     </script>
   </body>
 </html>
