@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Change a map's style</title>
+    <title>Tico's 2nd MapBox App</title>
     <meta
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
@@ -51,7 +51,12 @@
     </style>
 
     <div id="root"></div>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.6/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.6/mapbox-gl-geocoder.css' type='text/css' /> 
+
     <div id="map"></div>
+
     <div id="menu">
       <input
         id="streets-v11"
@@ -78,8 +83,8 @@
       var map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
-        zoom: 6,
-        center: [-83.27060362450948, 43.831340298571774]
+        zoom: 4,
+        center: [-97.77255674948162, 39.788260590328576]
       });
 
       // Allows for switching between multiple views of the map
@@ -120,6 +125,11 @@
         enableHighAccuracy: true
         },
         trackUserLocation: true
+      }));
+
+      // Adds the ability to search box (geocoder) to help find a particular place on the map
+      map.addControl(new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken
       }));
     </script>
   </body>
