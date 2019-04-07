@@ -264,6 +264,23 @@
         .setLngLat(jakeLocation)
         .setPopup(jakePopup) // sets a popup on the jakeMarker
         .addTo(map);
+
+
+      // Sets the location for the jamieMarker
+      var jamieLocation = [-83.91833118857879, 35.9459445349179];
+      // Creates a popup for Jamie
+      var jamiePopup = new mapboxgl.Popup({ offset: 25 })
+      .setText(
+        "NAME: Jamie Goodnight, SWAGGER: Pretty-Boy-Swag, COHORT: Web17"
+      );
+      // Creates a DOM element for the Jamie's marker called 'jamieDiv'
+      var jamieDiv = document.createElement('div');
+      jamieDiv.id = 'jamieMarker';
+      // Creates the jamieMarker
+      new mapboxgl.Marker(jamieDiv)
+        .setLngLat(jamieLocation)
+        .setPopup(jamiePopup) // sets a popup on the jamieMarker
+        .addTo(map);
     </script>
   </body>
 </html>
