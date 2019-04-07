@@ -247,6 +247,23 @@
         .setLngLat(julianLocation)
         .setPopup(julianPopup) // sets a popup on the julianMarker
         .addTo(map);
+
+
+      // Sets the location for the jakeMarker
+      var jakeLocation = [-93.75444640217057, 41.55925021113276];
+      // Creates a popup for Jake
+      var jakePopup = new mapboxgl.Popup({ offset: 25 })
+      .setText(
+        "NAME: Jake Thomas, SWAGGER: Sk8r-Boy-Swag, COHORT: Web17"
+      );
+      // Creates a DOM element for the Jake's marker called 'jakeDiv'
+      var jakeDiv = document.createElement('div');
+      jakeDiv.id = 'jakeMarker';
+      // Creates the jakeMarker
+      new mapboxgl.Marker(jakeDiv)
+        .setLngLat(jakeLocation)
+        .setPopup(jakePopup) // sets a popup on the jakeMarker
+        .addTo(map);
     </script>
   </body>
 </html>
