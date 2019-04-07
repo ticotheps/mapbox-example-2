@@ -167,10 +167,10 @@
       var ticoDiv = document.createElement('div');
       ticoDiv.id = 'ticoMarker';
       
-      // create the marker
+      // Creates the ticoMarker
       new mapboxgl.Marker(ticoDiv)
         .setLngLat(ticoLocation)
-        .setPopup(ticoPopup) // sets a popup on Tico's marker
+        .setPopup(ticoPopup) // sets a popup on the ticoMarker
         .addTo(map);
     </script>
   </body>
