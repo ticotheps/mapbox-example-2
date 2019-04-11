@@ -50,7 +50,7 @@
         display: none;
       }
       #ticoMarker {
-        background-image: url('https://media.licdn.com/dms/image/C4D03AQF7SiNESVIHKg/profile-displayphoto-shrink_200_200/0?e=1560384000&v=beta&t=xdSdqxSkUdNeN0GH_nTqyX0qPiKQn3CBVE1O8NAMU-k');
+        background-image: url("https://media.licdn.com/dms/image/C4D03AQF7SiNESVIHKg/profile-displayphoto-shrink_200_200/0?e=1560384000&v=beta&t=xdSdqxSkUdNeN0GH_nTqyX0qPiKQn3CBVE1O8NAMU-k");
         background-size: cover;
         width: 50px;
         height: 50px;
@@ -58,23 +58,23 @@
         cursor: pointer;
       }
       #brandonMarker {
-        background-image: url('https://media.licdn.com/dms/image/C5103AQGpOv60ucS0Rw/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=NpjawVfk9CWnFP3SgLaD4sjUyRMvjbhAebI_M8YZOFs');
+        background-image: url("https://media.licdn.com/dms/image/C5103AQGpOv60ucS0Rw/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=NpjawVfk9CWnFP3SgLaD4sjUyRMvjbhAebI_M8YZOFs");
         background-size: cover;
         width: 50px;
         height: 50px;
         border-radius: 50%;
         cursor: pointer;
-      } 
+      }
       #julianMarker {
-        background-image: url('https://media.licdn.com/dms/image/C5603AQFLzdUhJ32BiQ/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=EFeolKWQMXTJGwQx834uKGe0AjrpZ19cvPDNaZ-SwiI');
+        background-image: url("https://media.licdn.com/dms/image/C5603AQFLzdUhJ32BiQ/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=EFeolKWQMXTJGwQx834uKGe0AjrpZ19cvPDNaZ-SwiI");
         background-size: cover;
         width: 50px;
         height: 50px;
         border-radius: 50%;
         cursor: pointer;
-      } 
+      }
       #jakeMarker {
-        background-image: url('https://media.licdn.com/dms/image/C4E03AQFkR4JOViu1ew/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=tmgqcCxcQFNI8VtW6I3owYpEFEK3qIIeenxDtStRvpI');
+        background-image: url("https://media.licdn.com/dms/image/C4E03AQFkR4JOViu1ew/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=tmgqcCxcQFNI8VtW6I3owYpEFEK3qIIeenxDtStRvpI");
         background-size: cover;
         width: 50px;
         height: 50px;
@@ -82,7 +82,7 @@
         cursor: pointer;
       }
       #jamieMarker {
-        background-image: url('https://media.licdn.com/dms/image/C4E03AQEPtPXlxEKKlw/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=_YofkWrsFJNlJv2vbeS6ZSPovc4_pWHYHM_qTfJFoMI');
+        background-image: url("https://media.licdn.com/dms/image/C4E03AQEPtPXlxEKKlw/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=_YofkWrsFJNlJv2vbeS6ZSPovc4_pWHYHM_qTfJFoMI");
         background-size: cover;
         width: 50px;
         height: 50px;
@@ -90,7 +90,7 @@
         cursor: pointer;
       }
       #ryanMarker {
-        background-image: url('https://ca.slack-edge.com/T4JUEB3ME-UEVRGAJ2J-9bef9b22ca95-72');
+        background-image: url("https://ca.slack-edge.com/T4JUEB3ME-UEVRGAJ2J-9bef9b22ca95-72");
         background-size: cover;
         width: 50px;
         height: 50px;
@@ -98,7 +98,7 @@
         cursor: pointer;
       }
       #lowellMarker {
-        background-image: url('https://ca.slack-edge.com/T4JUEB3ME-UBY3DSB0D-1d29263ffa6e-72');
+        background-image: url("https://ca.slack-edge.com/T4JUEB3ME-UBY3DSB0D-1d29263ffa6e-72");
         background-size: cover;
         width: 50px;
         height: 50px;
@@ -111,9 +111,13 @@
     </style>
 
     <div id="root"></div>
-    
-    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.6/mapbox-gl-geocoder.min.js'></script>
-    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.6/mapbox-gl-geocoder.css' type='text/css' /> 
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.6/mapbox-gl-geocoder.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.6/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
 
     <div id="map"></div>
 
@@ -139,11 +143,11 @@
 
     <script>
       mapboxgl.accessToken =
-        "pk.eyJ1IjoidGljb3RoZXBzIiwiYSI6ImNqdTYycTU4YjFmNXQ0M3F2OXU5OThmc2wifQ.JkuePrf-OpxH31stfsrG9g";
+        "pk.eyJ1IjoidGljb3RoZXBzIiwiYSI6ImNqdTl4ZTRwYjBhdTY0M3FxZzhpY3FmZWcifQ.zt0JGIlN2B3nLi4d7yBaew";
       var map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
-        zoom: 4,
+        zoom: 3,
         center: [-97.77255674948162, 39.788260590328576]
       });
 
@@ -160,7 +164,7 @@
         inputs[i].onclick = switchLayer;
       }
 
-      // Creates a display for the draggable marker that will give you 
+      // Creates a display for the draggable marker that will give you
       // current coordinates of the marker
       var coordinates = document.getElementById("coordinates");
 
@@ -181,135 +185,124 @@
       marker.on("dragend", onDragEnd);
 
       // Adds the ability to search box (geocoder) to help find a particular place on the map
-      map.addControl(new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken
-      }));
+      map.addControl(
+        new MapboxGeocoder({
+          accessToken: mapboxgl.accessToken
+        })
+      );
 
       // Adds the ability to geo-locate the user with a single click
-      map.addControl(new mapboxgl.GeolocateControl({
-        positionOptions: {
-        enableHighAccuracy: true
-        },
-        trackUserLocation: true
-      }));
+      map.addControl(
+        new mapboxgl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true
+          },
+          trackUserLocation: true
+        })
+      );
 
       // Adds a map zoom/rotation controller
       map.addControl(new mapboxgl.NavigationControl());
 
-
-
       // Sets the location for the ticoMarker
       var ticoLocation = [-83.1801085054985, 43.82350376662936];
       // Creates a popup for Tico
-      var ticoPopup = new mapboxgl.Popup({ offset: 25 })
-      .setText(
+      var ticoPopup = new mapboxgl.Popup({ offset: 25 }).setText(
         "NAME: Tico S. Thepsourinthone, SWAGGER: Airbender-Swag, COHORT: Web17"
       );
       // Creates a DOM element for the Tico's marker called 'ticoDiv'
-      var ticoDiv = document.createElement('div');
-      ticoDiv.id = 'ticoMarker';
+      var ticoDiv = document.createElement("div");
+      ticoDiv.id = "ticoMarker";
       // Creates the ticoMarker
       new mapboxgl.Marker(ticoDiv)
         .setLngLat(ticoLocation)
         .setPopup(ticoPopup) // sets a popup on the ticoMarker
         .addTo(map);
 
-
       // Sets the location for the brandonMarker
       var brandonLocation = [-95.34829968898951, 29.75139922863808];
       // Creates a popup for Brandon
-      var brandonPopup = new mapboxgl.Popup({ offset: 25 })
-      .setText(
+      var brandonPopup = new mapboxgl.Popup({ offset: 25 }).setText(
         "NAME: Brandon Gardner, SWAGGER: MongoDB-Swag, COHORT: Web17"
       );
       // Creates a DOM element for the Brandon's marker called 'brandonDiv'
-      var brandonDiv = document.createElement('div');
-      brandonDiv.id = 'brandonMarker';
+      var brandonDiv = document.createElement("div");
+      brandonDiv.id = "brandonMarker";
       // Creates the brandonMarker
       new mapboxgl.Marker(brandonDiv)
         .setLngLat(brandonLocation)
         .setPopup(brandonPopup) // sets a popup on the brandonMarker
         .addTo(map);
 
-
       // Sets the location for the julianMarker
       var julianLocation = [-117.84959946287097, 33.78650678607805];
       // Creates a popup for Julian
-      var julianPopup = new mapboxgl.Popup({ offset: 25 })
-      .setText(
+      var julianPopup = new mapboxgl.Popup({ offset: 25 }).setText(
         "NAME: Julian Moreno, SWAGGER: WordPress-Swag, COHORT: Web17"
       );
       // Creates a DOM element for the Julian's marker called 'julianDiv'
-      var julianDiv = document.createElement('div');
-      julianDiv.id = 'julianMarker';
+      var julianDiv = document.createElement("div");
+      julianDiv.id = "julianMarker";
       // Creates the julianMarker
       new mapboxgl.Marker(julianDiv)
         .setLngLat(julianLocation)
         .setPopup(julianPopup) // sets a popup on the julianMarker
         .addTo(map);
 
-
       // Sets the location for the jakeMarker
       var jakeLocation = [-93.75444640217057, 41.55925021113276];
       // Creates a popup for Jake
-      var jakePopup = new mapboxgl.Popup({ offset: 25 })
-      .setText(
+      var jakePopup = new mapboxgl.Popup({ offset: 25 }).setText(
         "NAME: Jake Thomas, SWAGGER: Sk8r-Boy-Swag, COHORT: Web17"
       );
       // Creates a DOM element for the Jake's marker called 'jakeDiv'
-      var jakeDiv = document.createElement('div');
-      jakeDiv.id = 'jakeMarker';
+      var jakeDiv = document.createElement("div");
+      jakeDiv.id = "jakeMarker";
       // Creates the jakeMarker
       new mapboxgl.Marker(jakeDiv)
         .setLngLat(jakeLocation)
         .setPopup(jakePopup) // sets a popup on the jakeMarker
         .addTo(map);
 
-
       // Sets the location for the jamieMarker
       var jamieLocation = [-83.91833118857879, 35.9459445349179];
       // Creates a popup for Jamie
-      var jamiePopup = new mapboxgl.Popup({ offset: 25 })
-      .setText(
+      var jamiePopup = new mapboxgl.Popup({ offset: 25 }).setText(
         "NAME: Jamie Goodnight, SWAGGER: Pretty-Boy-Swag, COHORT: Web17"
       );
       // Creates a DOM element for the Jamie's marker called 'jamieDiv'
-      var jamieDiv = document.createElement('div');
-      jamieDiv.id = 'jamieMarker';
+      var jamieDiv = document.createElement("div");
+      jamieDiv.id = "jamieMarker";
       // Creates the jamieMarker
       new mapboxgl.Marker(jamieDiv)
         .setLngLat(jamieLocation)
         .setPopup(jamiePopup) // sets a popup on the jamieMarker
         .addTo(map);
 
-
       // Sets the location for the ryanMarker
       var ryanLocation = [-104.82453597160291, 38.830568158013136];
       // Creates a popup for Ryan
-      var ryanPopup = new mapboxgl.Popup({ offset: 25 })
-      .setText(
+      var ryanPopup = new mapboxgl.Popup({ offset: 25 }).setText(
         "NAME: Ryan Clark, SWAGGER: Old-Bird-Swag, COHORT: Web17"
       );
       // Creates a DOM element for the Ryan's marker called 'ryanDiv'
-      var ryanDiv = document.createElement('div');
-      ryanDiv.id = 'ryanMarker';
+      var ryanDiv = document.createElement("div");
+      ryanDiv.id = "ryanMarker";
       // Creates the ryanMarker
       new mapboxgl.Marker(ryanDiv)
         .setLngLat(ryanLocation)
         .setPopup(ryanPopup) // sets a popup on the ryanMarker
         .addTo(map);
 
-
       // Sets the location for the lowellMarker
       var lowellLocation = [-111.63890154599396, 40.11547381025369];
       // Creates a popup for Lowell
-      var lowellPopup = new mapboxgl.Popup({ offset: 25 })
-      .setText(
+      var lowellPopup = new mapboxgl.Popup({ offset: 25 }).setText(
         "NAME: Lowell Richardson, SWAGGER: Russian-Quiz-Swag, COHORT: Web17"
       );
       // Creates a DOM element for the Lowell's marker called 'lowellDiv'
-      var lowellDiv = document.createElement('div');
-      lowellDiv.id = 'lowellMarker';
+      var lowellDiv = document.createElement("div");
+      lowellDiv.id = "lowellMarker";
       // Creates the lowellMarker
       new mapboxgl.Marker(lowellDiv)
         .setLngLat(lowellLocation)
